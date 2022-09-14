@@ -4,17 +4,19 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class EquipoService {
-
-  equipo:any[]=[{
+  
+   
+  equipo:any[] = [{
 
     nombre: 'Ignacio',
     especialidad: 'HTML',
-    descripción: 'Lorem Ipsum 1'},
+    descripcion: 'Lorem Ipsum 1'},
+
     {
 
       nombre: 'Maria',
       especialidad: 'CSS',
-      descripción: 'Lorem Ipsum 2'},
+      descripcion: 'Lorem Ipsum 2'},
 
   ]
 
@@ -26,5 +28,12 @@ export class EquipoService {
   obtenerequipo(){
 
     return this.equipo;
+  }
+  
+  obtenerUno(i:number){
+
+    return this.equipo[i];
+
+
   }
 }

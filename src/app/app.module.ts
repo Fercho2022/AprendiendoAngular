@@ -21,6 +21,7 @@ import { EquipoComponent } from './equipo/equipo.component'
 
 const routes: Routes = [
   { path: 'contacto', component: ContactoComponent },
+  { path: 'equipo/:id', component: EquipoComponent },
   { path: 'nosotros', component: NosotrosComponent },
   { path: 'error', component: PagerrorComponent },
 
